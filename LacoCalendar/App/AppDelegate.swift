@@ -28,8 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let configurator = Configurator()
         configurator.configure()
 
-        realmService.loadMockData()
-
         window.rootViewController = navigationVC
         window.makeKeyAndVisible()
 
