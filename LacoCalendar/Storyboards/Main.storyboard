@@ -86,7 +86,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sE2-eE-axm">
-                                <rect key="frame" x="112" y="766" width="162" height="35"/>
+                                <rect key="frame" x="115.66666666666667" y="766" width="161.66666666666663" height="35"/>
                                 <color key="tintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Удалить событие" titleAlignment="center"/>
@@ -107,15 +107,14 @@
                             <constraint firstItem="DgV-6T-PrR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Ecd-LN-lhV"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xE3-ei-K6i" secondAttribute="trailing" constant="37" id="EoM-Rk-Xjz"/>
                             <constraint firstItem="sAf-uu-Nsa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="84" id="JQr-Og-rjC"/>
-                            <constraint firstItem="xE3-ei-K6i" firstAttribute="leading" secondItem="sE2-eE-axm" secondAttribute="trailing" constant="-244" id="JiY-9G-95t"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mPd-M9-EdM" secondAttribute="trailing" constant="36" id="KMp-bS-r6Y"/>
                             <constraint firstItem="h4A-KL-roU" firstAttribute="top" secondItem="SZf-am-Smn" secondAttribute="bottom" constant="43" id="Mer-Zv-b9P"/>
                             <constraint firstItem="Rpe-AY-TDM" firstAttribute="top" secondItem="sAf-uu-Nsa" secondAttribute="bottom" constant="19" id="OJR-RT-ogV"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h4A-KL-roU" secondAttribute="trailing" constant="36" id="QDm-f5-SJl"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cOX-Yi-rwf" secondAttribute="trailing" constant="37" id="QXN-wS-AcI"/>
                             <constraint firstItem="mPd-M9-EdM" firstAttribute="top" secondItem="H3k-40-gQO" secondAttribute="bottom" constant="12" id="TrK-Vd-ObA"/>
+                            <constraint firstItem="sE2-eE-axm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ZCl-Mc-zLt"/>
                             <constraint firstItem="uyT-3p-24h" firstAttribute="top" secondItem="h4A-KL-roU" secondAttribute="bottom" constant="9" id="amF-us-Fd7"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sE2-eE-axm" secondAttribute="trailing" constant="119" id="bNP-lQ-eUR"/>
                             <constraint firstItem="h4A-KL-roU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="31" id="bxW-YZ-oRX"/>
                             <constraint firstItem="H3k-40-gQO" firstAttribute="top" secondItem="uyT-3p-24h" secondAttribute="bottom" constant="-3" id="gJW-NT-vfz"/>
                             <constraint firstItem="SZf-am-Smn" firstAttribute="top" secondItem="Rpe-AY-TDM" secondAttribute="bottom" constant="32.333333333333343" id="gU3-yh-8h0"/>
@@ -123,7 +122,6 @@
                             <constraint firstItem="TpQ-zJ-Xby" firstAttribute="top" secondItem="h4A-KL-roU" secondAttribute="bottom" constant="12" id="hZF-zZ-UgZ"/>
                             <constraint firstItem="cOX-Yi-rwf" firstAttribute="top" secondItem="h4A-KL-roU" secondAttribute="bottom" constant="14" id="i5l-xB-2ZT"/>
                             <constraint firstItem="SZf-am-Smn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="j2J-tQ-L1b"/>
-                            <constraint firstItem="sE2-eE-axm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="112" id="lcy-nS-FY4"/>
                             <constraint firstItem="uyT-3p-24h" firstAttribute="leading" secondItem="TpQ-zJ-Xby" secondAttribute="trailing" constant="139" id="lqH-NJ-1va"/>
                             <constraint firstItem="H3k-40-gQO" firstAttribute="top" secondItem="cOX-Yi-rwf" secondAttribute="bottom" constant="-3" id="ocK-9i-lSt"/>
                             <constraint firstItem="cOX-Yi-rwf" firstAttribute="leading" secondItem="uyT-3p-24h" secondAttribute="trailing" constant="-7" id="qWR-Le-Fem"/>

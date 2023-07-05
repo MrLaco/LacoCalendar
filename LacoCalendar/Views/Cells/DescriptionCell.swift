@@ -16,9 +16,13 @@ class DescriptionCell: UITableViewCell {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.isScrollEnabled = false
+        textView.isUserInteractionEnabled = true
+        textView.isSelectable = true
         textView.autocorrectionType = .no
         textView.font = .systemFont(ofSize: 16)
         textView.delegate = self
+        textView.sizeToFit()
+        textView.layoutIfNeeded()
         return textView
     }()
 
@@ -31,7 +35,8 @@ class DescriptionCell: UITableViewCell {
             make.top.equalToSuperview().offset(8)
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().offset(-16)
-            make.bottom.equalToSuperview().offset(-394)
+            make.bottom.equalToSuperview().offset(-16)
+            make.height.equalTo(375)
         }
     }
 
