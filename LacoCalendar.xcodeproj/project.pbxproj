@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5408D69C2A4DD3B400D630C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408D69B2A4DD3B400D630C4 /* AppDelegate.swift */; };
+		5408D69E2A4DD3B400D630C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408D69D2A4DD3B400D630C4 /* SceneDelegate.swift */; };
+		5408D6A02A4DD3B400D630C4 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408D69F2A4DD3B400D630C4 /* CalendarViewController.swift */; };
+		5408D6A52A4DD3B500D630C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5408D6A42A4DD3B500D630C4 /* Assets.xcassets */; };
+		5408D6A82A4DD3B500D630C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5408D6A62A4DD3B500D630C4 /* LaunchScreen.storyboard */; };
+		540B8E092A4E2FAD00EE9A4F /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 540B8E082A4E2FAD00EE9A4F /* CalendarKit */; };
+		540B8E0B2A50B6C800EE9A4F /* CalendarWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E0A2A50B6C800EE9A4F /* CalendarWrapper.swift */; };
+		540B8E142A5183AD00EE9A4F /* RealmEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E132A5183AD00EE9A4F /* RealmEvent.swift */; };
+		540B8E162A52157E00EE9A4F /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E152A52157E00EE9A4F /* RealmService.swift */; };
+		540B8E1B2A523D7200EE9A4F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 540B8E1A2A523D7200EE9A4F /* SnapKit */; };
+		540B8E1E2A5242FD00EE9A4F /* UI+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E1D2A5242FD00EE9A4F /* UI+Helper.swift */; };
+		540B8E212A52D87600EE9A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540B8E202A52D87600EE9A4F /* Main.storyboard */; };
+		540B8E232A52D95200EE9A4F /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E222A52D95200EE9A4F /* EventDetailsViewController.swift */; };
+		540B8E272A53204D00EE9A4F /* EventTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E262A53204D00EE9A4F /* EventTableView.swift */; };
+		540B8E292A53228500EE9A4F /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E282A53228500EE9A4F /* NameCell.swift */; };
+		540B8E2B2A53255200EE9A4F /* StartDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E2A2A53255200EE9A4F /* StartDateCell.swift */; };
+		540B8E2D2A53256200EE9A4F /* EndDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E2C2A53256200EE9A4F /* EndDateCell.swift */; };
+		540B8E2F2A53257300EE9A4F /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E2E2A53257300EE9A4F /* DescriptionCell.swift */; };
+		540B8E312A532A3A00EE9A4F /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E302A532A3A00EE9A4F /* EditEventViewController.swift */; };
+		540B8E342A53698000EE9A4F /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E332A53698000EE9A4F /* CreateEventViewController.swift */; };
+		540B8E382A5565E100EE9A4F /* Macaroni in Frameworks */ = {isa = PBXBuildFile; productRef = 540B8E372A5565E100EE9A4F /* Macaroni */; };
+		540B8E3B2A55660100EE9A4F /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E3A2A55660100EE9A4F /* Configurator.swift */; };
+		540B8E462A556E4D00EE9A4F /* LacoCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8E452A556E4D00EE9A4F /* LacoCalendarTests.swift */; };
+		54538C9E2A5579C3008CE953 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 54538C9D2A5579C3008CE953 /* Realm */; };
+		54538CA02A5579C3008CE953 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 54538C9F2A5579C3008CE953 /* RealmSwift */; };
+		54538CA32A557B2F008CE953 /* MockRealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54538CA22A557B2F008CE953 /* MockRealmService.swift */; };
+		54538CAA2A558069008CE953 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 54538CA92A558069008CE953 /* Realm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		540B8E472A556E4D00EE9A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5408D6902A4DD3B400D630C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5408D6972A4DD3B400D630C4;
+			remoteInfo = LacoCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5408D6982A4DD3B400D630C4 /* LacoCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LacoCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5408D69B2A4DD3B400D630C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5408D69D2A4DD3B400D630C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5408D69F2A4DD3B400D630C4 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		5408D6A42A4DD3B500D630C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5408D6A72A4DD3B500D630C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5408D6A92A4DD3B500D630C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540B8E0A2A50B6C800EE9A4F /* CalendarWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWrapper.swift; sourceTree = "<group>"; };
+		540B8E132A5183AD00EE9A4F /* RealmEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmEvent.swift; sourceTree = "<group>"; };
+		540B8E152A52157E00EE9A4F /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		540B8E1D2A5242FD00EE9A4F /* UI+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+Helper.swift"; sourceTree = "<group>"; };
+		540B8E202A52D87600EE9A4F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		540B8E222A52D95200EE9A4F /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		540B8E262A53204D00EE9A4F /* EventTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableView.swift; sourceTree = "<group>"; };
+		540B8E282A53228500EE9A4F /* NameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		540B8E2A2A53255200EE9A4F /* StartDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDateCell.swift; sourceTree = "<group>"; };
+		540B8E2C2A53256200EE9A4F /* EndDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndDateCell.swift; sourceTree = "<group>"; };
+		540B8E2E2A53257300EE9A4F /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		540B8E302A532A3A00EE9A4F /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
+		540B8E332A53698000EE9A4F /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		540B8E3A2A55660100EE9A4F /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		540B8E432A556E4D00EE9A4F /* LacoCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LacoCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540B8E452A556E4D00EE9A4F /* LacoCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LacoCalendarTests.swift; sourceTree = "<group>"; };
+		54538CA22A557B2F008CE953 /* MockRealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRealmService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5408D6952A4DD3B400D630C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540B8E382A5565E100EE9A4F /* Macaroni in Frameworks */,
+				540B8E1B2A523D7200EE9A4F /* SnapKit in Frameworks */,
+				54538C9E2A5579C3008CE953 /* Realm in Frameworks */,
+				54538CA02A5579C3008CE953 /* RealmSwift in Frameworks */,
+				540B8E092A4E2FAD00EE9A4F /* CalendarKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540B8E402A556E4D00EE9A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54538CAA2A558069008CE953 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5408D68F2A4DD3B400D630C4 = {
+			isa = PBXGroup;
+			children = (
+				5408D69A2A4DD3B400D630C4 /* LacoCalendar */,
+				540B8E442A556E4D00EE9A4F /* LacoCalendarTests */,
+				5408D6992A4DD3B400D630C4 /* Products */,
+				54538CA42A557C45008CE953 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5408D6992A4DD3B400D630C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5408D6982A4DD3B400D630C4 /* LacoCalendar.app */,
+				540B8E432A556E4D00EE9A4F /* LacoCalendarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5408D69A2A4DD3B400D630C4 /* LacoCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				540B8E392A5565EE00EE9A4F /* Dependencies */,
+				5408D6B02A4DD4CA00D630C4 /* Models */,
+				54EF48B32A4DE2E9003D03A5 /* Views */,
+				5408D6B12A4DD4CE00D630C4 /* Controllers */,
+				54EF48B42A4DE314003D03A5 /* Services */,
+				540B8E1C2A5242F100EE9A4F /* Helpers */,
+				540B8E1F2A52D86600EE9A4F /* Storyboards */,
+				5408D6AF2A4DD4A200D630C4 /* App */,
+				54EF48B52A4DE31B003D03A5 /* Resources */,
+				5408D6A92A4DD3B500D630C4 /* Info.plist */,
+			);
+			path = LacoCalendar;
+			sourceTree = "<group>";
+		};
+		5408D6AF2A4DD4A200D630C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5408D69B2A4DD3B400D630C4 /* AppDelegate.swift */,
+				5408D69D2A4DD3B400D630C4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5408D6B02A4DD4CA00D630C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				540B8E0A2A50B6C800EE9A4F /* CalendarWrapper.swift */,
+				54EF48B92A4DE38C003D03A5 /* Data */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5408D6B12A4DD4CE00D630C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5408D69F2A4DD3B400D630C4 /* CalendarViewController.swift */,
+				540B8E222A52D95200EE9A4F /* EventDetailsViewController.swift */,
+				540B8E302A532A3A00EE9A4F /* EditEventViewController.swift */,
+				540B8E332A53698000EE9A4F /* CreateEventViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		540B8E1C2A5242F100EE9A4F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				540B8E1D2A5242FD00EE9A4F /* UI+Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		540B8E1F2A52D86600EE9A4F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5408D6A62A4DD3B500D630C4 /* LaunchScreen.storyboard */,
+				540B8E202A52D87600EE9A4F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		540B8E322A5367EA00EE9A4F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				540B8E282A53228500EE9A4F /* NameCell.swift */,
+				540B8E2A2A53255200EE9A4F /* StartDateCell.swift */,
+				540B8E2C2A53256200EE9A4F /* EndDateCell.swift */,
+				540B8E2E2A53257300EE9A4F /* DescriptionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		540B8E392A5565EE00EE9A4F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				540B8E3A2A55660100EE9A4F /* Configurator.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		540B8E442A556E4D00EE9A4F /* LacoCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				54538CA12A557B1D008CE953 /* Mocks */,
+				540B8E452A556E4D00EE9A4F /* LacoCalendarTests.swift */,
+			);
+			path = LacoCalendarTests;
+			sourceTree = "<group>";
+		};
+		54538CA12A557B1D008CE953 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				54538CA22A557B2F008CE953 /* MockRealmService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		54538CA42A557C45008CE953 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54EF48B32A4DE2E9003D03A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				540B8E322A5367EA00EE9A4F /* Cells */,
+				540B8E262A53204D00EE9A4F /* EventTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54EF48B42A4DE314003D03A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				540B8E152A52157E00EE9A4F /* RealmService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		54EF48B52A4DE31B003D03A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5408D6A42A4DD3B500D630C4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		54EF48B92A4DE38C003D03A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				540B8E132A5183AD00EE9A4F /* RealmEvent.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5408D6972A4DD3B400D630C4 /* LacoCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5408D6AC2A4DD3B500D630C4 /* Build configuration list for PBXNativeTarget "LacoCalendar" */;
+			buildPhases = (
+				5408D6942A4DD3B400D630C4 /* Sources */,
+				5408D6952A4DD3B400D630C4 /* Frameworks */,
+				5408D6962A4DD3B400D630C4 /* Resources */,
+				540B8E352A555CAE00EE9A4F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LacoCalendar;
+			packageProductDependencies = (
+				540B8E082A4E2FAD00EE9A4F /* CalendarKit */,
+				540B8E1A2A523D7200EE9A4F /* SnapKit */,
+				540B8E372A5565E100EE9A4F /* Macaroni */,
+				54538C9D2A5579C3008CE953 /* Realm */,
+				54538C9F2A5579C3008CE953 /* RealmSwift */,
+			);
+			productName = LacoCalendar;
+			productReference = 5408D6982A4DD3B400D630C4 /* LacoCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		540B8E422A556E4D00EE9A4F /* LacoCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540B8E492A556E4D00EE9A4F /* Build configuration list for PBXNativeTarget "LacoCalendarTests" */;
+			buildPhases = (
+				540B8E3F2A556E4D00EE9A4F /* Sources */,
+				540B8E402A556E4D00EE9A4F /* Frameworks */,
+				540B8E412A556E4D00EE9A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540B8E482A556E4D00EE9A4F /* PBXTargetDependency */,
+			);
+			name = LacoCalendarTests;
+			packageProductDependencies = (
+				54538CA92A558069008CE953 /* Realm */,
+			);
+			productName = LacoCalendarTests;
+			productReference = 540B8E432A556E4D00EE9A4F /* LacoCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5408D6902A4DD3B400D630C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5408D6972A4DD3B400D630C4 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					540B8E422A556E4D00EE9A4F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5408D6972A4DD3B400D630C4;
+					};
+				};
+			};
+			buildConfigurationList = 5408D6932A4DD3B400D630C4 /* Build configuration list for PBXProject "LacoCalendar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5408D68F2A4DD3B400D630C4;
+			packageReferences = (
+				540B8E072A4E2FAD00EE9A4F /* XCRemoteSwiftPackageReference "CalendarKit" */,
+				540B8E192A523D7200EE9A4F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				540B8E362A5565E100EE9A4F /* XCRemoteSwiftPackageReference "Macaroni" */,
+				54538C9C2A5579C3008CE953 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 5408D6992A4DD3B400D630C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5408D6972A4DD3B400D630C4 /* LacoCalendar */,
+				540B8E422A556E4D00EE9A4F /* LacoCalendarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5408D6962A4DD3B400D630C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540B8E212A52D87600EE9A4F /* Main.storyboard in Resources */,
+				5408D6A82A4DD3B500D630C4 /* LaunchScreen.storyboard in Resources */,
+				5408D6A52A4DD3B500D630C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540B8E412A556E4D00EE9A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		540B8E352A555CAE00EE9A4F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5408D6942A4DD3B400D630C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540B8E3B2A55660100EE9A4F /* Configurator.swift in Sources */,
+				5408D6A02A4DD3B400D630C4 /* CalendarViewController.swift in Sources */,
+				540B8E232A52D95200EE9A4F /* EventDetailsViewController.swift in Sources */,
+				540B8E342A53698000EE9A4F /* CreateEventViewController.swift in Sources */,
+				540B8E2D2A53256200EE9A4F /* EndDateCell.swift in Sources */,
+				540B8E2B2A53255200EE9A4F /* StartDateCell.swift in Sources */,
+				540B8E162A52157E00EE9A4F /* RealmService.swift in Sources */,
+				540B8E1E2A5242FD00EE9A4F /* UI+Helper.swift in Sources */,
+				540B8E312A532A3A00EE9A4F /* EditEventViewController.swift in Sources */,
+				540B8E272A53204D00EE9A4F /* EventTableView.swift in Sources */,
+				5408D69C2A4DD3B400D630C4 /* AppDelegate.swift in Sources */,
+				540B8E2F2A53257300EE9A4F /* DescriptionCell.swift in Sources */,
+				540B8E292A53228500EE9A4F /* NameCell.swift in Sources */,
+				540B8E142A5183AD00EE9A4F /* RealmEvent.swift in Sources */,
+				5408D69E2A4DD3B400D630C4 /* SceneDelegate.swift in Sources */,
+				540B8E0B2A50B6C800EE9A4F /* CalendarWrapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540B8E3F2A556E4D00EE9A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540B8E462A556E4D00EE9A4F /* LacoCalendarTests.swift in Sources */,
+				54538CA32A557B2F008CE953 /* MockRealmService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		540B8E482A556E4D00EE9A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5408D6972A4DD3B400D630C4 /* LacoCalendar */;
+			targetProxy = 540B8E472A556E4D00EE9A4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5408D6A62A4DD3B500D630C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5408D6A72A4DD3B500D630C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5408D6AA2A4DD3B500D630C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5408D6AB2A4DD3B500D630C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5408D6AD2A4DD3B500D630C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZJ4NYXD5J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LacoCalendar/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Displaying the events";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ImLaco.LacoCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5408D6AE2A4DD3B500D630C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZJ4NYXD5J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LacoCalendar/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Displaying the events";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ImLaco.LacoCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		540B8E4A2A556E4D00EE9A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZJ4NYXD5J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ImLaco.LacoCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LacoCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LacoCalendar";
+			};
+			name = Debug;
+		};
+		540B8E4B2A556E4D00EE9A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZJ4NYXD5J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ImLaco.LacoCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LacoCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LacoCalendar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5408D6932A4DD3B400D630C4 /* Build configuration list for PBXProject "LacoCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5408D6AA2A4DD3B500D630C4 /* Debug */,
+				5408D6AB2A4DD3B500D630C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5408D6AC2A4DD3B500D630C4 /* Build configuration list for PBXNativeTarget "LacoCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5408D6AD2A4DD3B500D630C4 /* Debug */,
+				5408D6AE2A4DD3B500D630C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540B8E492A556E4D00EE9A4F /* Build configuration list for PBXNativeTarget "LacoCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540B8E4A2A556E4D00EE9A4F /* Debug */,
+				540B8E4B2A556E4D00EE9A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		540B8E072A4E2FAD00EE9A4F /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.8;
+			};
+		};
+		540B8E192A523D7200EE9A4F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		540B8E362A5565E100EE9A4F /* XCRemoteSwiftPackageReference "Macaroni" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bealex/Macaroni.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		54538C9C2A5579C3008CE953 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.41.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		540B8E082A4E2FAD00EE9A4F /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 540B8E072A4E2FAD00EE9A4F /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+		540B8E1A2A523D7200EE9A4F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 540B8E192A523D7200EE9A4F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		540B8E372A5565E100EE9A4F /* Macaroni */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 540B8E362A5565E100EE9A4F /* XCRemoteSwiftPackageReference "Macaroni" */;
+			productName = Macaroni;
+		};
+		54538C9D2A5579C3008CE953 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54538C9C2A5579C3008CE953 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		54538C9F2A5579C3008CE953 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54538C9C2A5579C3008CE953 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		54538CA92A558069008CE953 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54538C9C2A5579C3008CE953 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5408D6902A4DD3B400D630C4 /* Project object */;
+}

@@ -1,0 +1,50 @@
+{
+  "pins" : [
+    {
+      "identity" : "calendarkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/richardtop/CalendarKit.git",
+      "state" : {
+        "revision" : "2154298df8a31a82309b7369d34bf805201879d3",
+        "version" : "1.1.9"
+      }
+    },
+    {
+      "identity" : "macaroni",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bealex/Macaroni.git",
+      "state" : {
+        "revision" : "916216053de3490ca13ca502e43e99b34d024c4f",
+        "version" : "4.0.0"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "f1434caadda443b4ed2261b91ea4f43ab1ee2aa5",
+        "version" : "13.15.1"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "revision" : "b287dc102036ff425bd8a88483f0a5596871f05e",
+        "version" : "10.41.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
+      }
+    }
+  ],
+  "version" : 2
+}
